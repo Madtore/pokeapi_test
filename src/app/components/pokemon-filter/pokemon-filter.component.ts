@@ -29,7 +29,7 @@ export class PokemonFilterComponent implements OnInit {
   constructor(private pokemonapiService: PokeapiService) { }
 
   ngOnInit(): void {
-    this.pokemonapiService.getAllPokemons('100')
+    this.pokemonapiService.getAllPokemons('1000')
     .subscribe((pokemons: any) => {
       this.allPokemon = pokemons.results.map((pokemon: any) => {
         const id = pokemon.url.split('/').filter(Boolean).pop();

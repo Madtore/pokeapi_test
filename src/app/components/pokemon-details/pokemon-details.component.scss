@@ -1,0 +1,80 @@
+/* Estilos generales de la tarjeta */
+.pokemon-details {
+  display: block;
+  padding: 20px;
+}
+
+/* Estructura de la grilla */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  padding: 10px;
+}
+
+.grid-item-left {
+  grid-column: span 1;
+}
+
+.grid-item-right {
+  grid-column: span 2;
+}
+
+/* Estilos para las tablas */
+.pokemon-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pokemon-table th,
+.pokemon-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Estilos para los tags de tipo */
+.type-tags {
+  display: flex;
+  justify-content: center;
+}
+
+.tag {
+  margin-right: 10px;
+}
+
+
+.stat-bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.stat-bar {
+  height: 8px;
+  background-color: #4caf50;
+}
+
+
+.no-pokemon-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #888;
+}
+
+
+.mt-3 {
+  margin-top: 16px;
+}
