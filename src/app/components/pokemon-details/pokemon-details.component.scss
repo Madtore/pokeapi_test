@@ -1,14 +1,16 @@
-/* Estilos generales de la tarjeta */
 .pokemon-details {
   display: block;
-  padding: 20px;
 }
 
-/* Estructura de la grilla */
+.p-card .p-card-body {
+  padding: 1.25rem;
+  margin-top: 20px;
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax( 1fr));
 }
 
 .grid-item {
@@ -23,7 +25,6 @@
   grid-column: span 2;
 }
 
-/* Estilos para las tablas */
 .pokemon-table {
   width: 100%;
   border-collapse: collapse;
@@ -40,10 +41,10 @@
   text-align: center;
 }
 
-/* Estilos para los tags de tipo */
 .type-tags {
   display: flex;
   justify-content: center;
+  padding: 5px;
 }
 
 .tag {

@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    // Inicialización si es necesaria
+   
   }
 
   onPokemonSelected(pokemon: PokemonOption) {  

@@ -87,9 +87,4 @@ export class EvolutionChainComponent implements OnChanges {
       return 'post';
     }
   }
-  
-  viewEvolutionDetails(pokemonId: number) {
-    // Navigate to the selected Pokémon's detail page
-    this.router.navigate(['/pokemon', pokemonId]);
-  }
 }
