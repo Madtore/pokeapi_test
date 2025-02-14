@@ -1,0 +1,28 @@
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Selecciona un Pokémon</h5>
+      
+      <div class="p-field">
+        <p-autoComplete
+          [(ngModel)]="selectedPokemon"
+          [suggestions]="filteredPokemon"
+          (completeMethod)="filterPokemon($event)"
+          field="name"
+          [dropdown]="true"
+          [virtualScroll]="true"
+          [virtualScrollItemSize]="38"
+          (onSelect)="onSelect($event)"
+          (onClear)="onClear()"
+          placeholder="Buscar Pokémon..."
+          [style]="{'width':'100%'}"
+          styleClass="p-3"
+        >
+          <ng-template let-pokemon pTemplate="item">
+            <div class="pokemon-item">
+              <span>{{ pokemon.name | titlecase }}</span>
+            </div>
+          </ng-template>
+        </p-autoComplete>
+      </div>
+    </div>
+  </div>
