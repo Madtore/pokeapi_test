@@ -3,13 +3,8 @@ import { PokeapiService } from '../../core/services/pokeapi.service';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { PokemonOption } from '../../models/pokemon.model';
 
-
-interface PokemonOption {
-  name: string;
-  url : string;
-  id: number;
-}
 
 @Component({
   selector: 'app-pokemon-filter',

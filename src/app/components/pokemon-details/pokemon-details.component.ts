@@ -4,27 +4,10 @@ import { TableModule } from 'primeng/table';
 import { CardModule } from 'primeng/card';
 import { TagModule } from 'primeng/tag';
 import { EvolutionChainComponent } from '../evolution-chain/evolution-chain.component';
+import { Pokemon , Ability} from '../../models/pokemon.model';
 
-export interface Pokemon {
-  id: number;
-  name: string;
-  image: string;
-  types: string[];
-  abilities: Ability[];
-  evolutionChainId: number;
-  weight?: number;
-  height?: number;
-  stats?: {
-    name: string;
-    base: number;
-  }[];
-}
 
-export interface Ability {
-  name: string;
-  description: string;
-  isHidden: boolean;
-}
+
 
 @Component({
   selector: 'app-pokemon-details',
@@ -34,7 +17,7 @@ export interface Ability {
     TableModule,
     CardModule,
     TagModule,
-    EvolutionChainComponent
+    EvolutionChainComponent,
   ],
   templateUrl: './pokemon-details.component.html',
   styleUrl: './pokemon-details.component.scss'
