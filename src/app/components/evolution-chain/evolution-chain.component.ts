@@ -5,12 +5,8 @@ import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { PokemonDetailService } from '../../services/pokemon-details.service';
 import { Router } from '@angular/router';
+import { PokemonEvolution } from '../../models/pokemon.model';
 
-interface PokemonEvolution {
-  id: number;
-  name: string;
-  image: string;
-}
 
 @Component({
   selector: 'app-evolution-chain',
